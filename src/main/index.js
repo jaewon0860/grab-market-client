@@ -50,8 +50,8 @@ function MainPage() {
             );
           })}
         </div>
-        <div id="footer"></div>
       </div>
+      <div id="footer"></div>
     </div>
   );
 }
