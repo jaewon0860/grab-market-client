@@ -1,46 +1,5 @@
-* {
-  /* 모든 바디에 마진과 패딩을 없앤다 최상단에 위치한건 전역변수같이 모든 바디에 영향을 주는 위치 */
-  /* 바디 -> 모든 태그에 */
-  margin: 0;
-  padding: 0;
-}
-
-#header {
-  height: 64px;
-  display: flex; /* 현재 진행하는 나열방향을 수평방향으로 나열한다. -> 부모위치에서 설정*/
-  justify-content: center; /* 진행방향에서 중심에 있는다. */
-  /* margin: 0 auto; 와 같은역할을 한다 */
-  border-bottom: 1px solid gray;
-  /* 기본적으로 body태그는 margin 8px이 들어간다. */
-}
-
-#body {
-  height: 100vh;
-  width: 1024px; /* 부모는 width가 원래 100%이다 */
-  margin: 0 auto; /* 부모의 수평방향에서 중심으로 위치한다. -> 자식위치에서 설정*/
-  padding: 24px;
-}
-
-#footer {
-  height: 200px;
-  background-color: rgb(230, 230, 230);
-}
-
 #banner {
   height: 300px;
-}
-
-#header-area {
-  width: 1024px;
-  height: 100%;
-  display: flex; /* 부모의 기능을 가져온다 */
-  align-items: center; /* 수직방향에서 센터로 정렬 */
-}
-
-#header-area > img {
-  /* header-area 안의 img는 모두 동일한 크기로.. */
-  width: 128px;
-  height: 36px;
 }
 
 #banner > img {
@@ -69,7 +28,7 @@
   margin-right: 12px;
   margin-bottom: 12px;
   border: 1px solid rgb(230, 230, 230);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   /* 부모의 영역을 침범하지 않는다 -> 침범하는 구간을 히든처리한다 */
 }
